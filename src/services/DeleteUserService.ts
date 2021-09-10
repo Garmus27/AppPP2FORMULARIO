@@ -1,21 +1,21 @@
-import { getCustomRepository } from "typeorm";
-import { User } from "../entities/User";
-import { UsersRepository } from "../repositories/UsersRepository";
+// import { getCustomRepository } from "typeorm";
+// import { User } from "../entities/User";
+// import { UsersRepository } from "../repositories/UsersRepository";
 
-class DeleteUserService {
-  async delete(id: string) {
-    const usersRepository = getCustomRepository(UsersRepository);
+// class DeleteUserService {
+//   async delete(id: string) {
+//     const usersRepository = getCustomRepository(UsersRepository);
 
-    const user = await usersRepository
-      .createQueryBuilder()
-      .delete()
-      .from(User)
-      .where("id = :id", { id })
-      .execute();
+//     const user = await usersRepository
+//       .createQueryBuilder()
+//       .delete()
+//       .from(User)
+//       .where("id = :id", { id })
+//       .execute();
 
-    return user;
+//     return user;
 
-  }
-}
+//   }
+// }
 
-export { DeleteUserService };
+// export { DeleteUserService };

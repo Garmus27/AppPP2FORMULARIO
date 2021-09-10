@@ -44,7 +44,7 @@
   <br>
   <div class="container">
     <div class="text-center">
-      <h2>Tabela de usuários</h2>
+      <h2>User´s table</h2>
     </div>
     <br>
     <form action="./edit-user" method="POST">
@@ -62,21 +62,21 @@
           <input type="text" name="email" id="email" class="form-control" value="<%= user.email %>">
         </div>
         <div class="col-6">
-          <label for="telefone" class="form-label">Telefone</label>
-          <input type="text" name="telefone" id="telefone" class="form-control" value="<%= user.telefone %>">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="text" name="phone" id="phone" class="form-control" value="<%= user.phone %>">
         </div>
       </div>
       <br>
       <div class="row">
         <div class="col-6">
-          <label for="cidade" class="form-label">Cidade</label>
-          <input type="text" name="cidade" id="cidade" class="form-control" value="<%= user.cidade %>">
+          <label for="city" class="form-label">City</label>
+          <input type="text" name="city" id="city" class="form-control" value="<%= user.city %>">
         </div>
         <div class="col-6">
-          <label for="estado" class="form-label">Estado</label>
-          <select name="estado" id="estado" class="form-select">
+          <label for="state" class="form-label">State</label>
+          <select name="state" id="state" class="form-select">
             <option value="<%= user.estado %>" selected>
-              <%= user.estado %>
+              <%= user.state %>
             </option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
@@ -112,12 +112,12 @@
       <div class="row">
         <div class="col-6">
           <div class="float-start">
-            <button type="submit" class="btn primary-btn">Atualizar usuário</button>
+            <button type="submit" class="btn primary-btn">User Update</button>
           </div>
         </div>
         <div class="col-6">
           <div class="float-end">
-            <a href="./" class="btn secondary-btn">Voltar à home</a>
+            <a href="./" class="btn secondary-btn">Back</a>
           </div>
         </div>
       </div>

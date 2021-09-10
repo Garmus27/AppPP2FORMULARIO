@@ -53,12 +53,12 @@
       <thead>
         <th scope="col">Username</th>
         <th scope="col">Email</th>
-        <th scope="col">Telefone</th>
-        <th scope="col">Cidade</th>
-        <th scope="col">Estado</th>
-        <th scope="col">Criação</th>
-        <th scope="col">Atualização</th>
-        <th scope="col">Ações</th>
+        <th scope="col">Phone</th>
+        <th scope="col">City</th>
+        <th scope="col">State</th>
+        <th scope="col">Registratio</th>
+        <th scope="col">Atualization</th>
+        <th scope="col">Acces</th>
       </thead>
       <tbody>
         <% users.forEach(function(user) { %>
@@ -70,13 +70,13 @@
               <%= user.email %>
             </td>
             <td>
-              <%= user.telefone %>
+              <%= user.phone %>
             </td>
             <td>
-              <%= user.cidade %>
+              <%= user.city %>
             </td>
             <td>
-              <%= user.estado %>
+              <%= user.state %>
             </td>
             <td>
               <%= user.created_at.toLocaleDateString() %>
